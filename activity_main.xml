@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_color"
+    >
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Make Order"
+        android:textColor="@color/white_greyish"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/one"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-25dp"
+        android:text="Service"
+        android:textColor="@color/white_greyish"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="                               Service Name"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/white_greyish" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/two"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-25dp"
+        android:text="Location"
+        android:textColor="@color/white_greyish"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/Location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="                               Your Location"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/white_greyish" />
+
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/three"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-25dp"
+        android:text="Describe Your Project"
+        android:textColor="@color/white_greyish"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/projectDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="                               Describe in detail"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/white_greyish" />
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/four"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-25dp"
+        android:text="Maximum Time"
+        android:textColor="@color/white_greyish"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="                                  Time Limit"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/white_greyish" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/five"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-25dp"
+        android:text="Upload Image"
+        android:textColor="@color/white_greyish"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/imageUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="          click here ! upload image for explanation"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/white_greyish" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="1dp"
+        android:text="Update"
+        android:background="@color/white"
+        android:textColor="@color/button_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

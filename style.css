@@ -1,0 +1,703 @@
+body{   font-family: 'K2D', sans-serif;
+ margin: 0;
+}
+
+
+#myCarousel .nav a small {
+      display:block;
+      }
+      #myCarousel .nav {
+      background:#eee;
+      }
+      #myCarousel .nav a {
+      border-radius:0px;
+      }
+
+/**********
+
+
+/* carousel fullscreen */
+.carousel-fullscreen .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* carousel fullscreen - vertically centered caption*/
+.carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+/* overlay for better readibility of the caption  */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+.carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+
+/* demo typography */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .display-1 {
+        font-size: 3.3rem;
+    }
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    .display-3 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/*text design for service */
+
+
+.text-effect {
+    color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 0;
+    position: relative;
+}
+.text-effect:before,
+.text-effect:after{
+    content: attr(data-tip);
+    color: #188ece;
+    position: absolute;
+    top:0;
+    left: 44%;
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+    animation: slide1 1.5s infinite linear;
+    animation-delay: 0.5s;
+}
+.text-effect:after{
+    color: #34C3EB;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+    clip-path: polygon(0 0, 190% 0%, 100% 36%, 0 56%);
+    animation: slide2 1.5s infinite linear;
+    animation-delay: 0.5s;
+}
+@keyframes slide1 {
+    0%{ transform: translateX(0); }
+    50%{ transform: translate(5px, -2%); }
+}
+@keyframes slide2 {
+    0%{ transform: translateX(0); }
+    50%{ transform: translate(-5px, 2%); }
+}
+@media only screen and (max-width: 990px){
+    .text-effect{ font-size: 30px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 30px; }
+}
+@media only screen and (max-width: 479px){
+    .text-effect{ font-size: 25px; right:13%;}
+
+}
+@media only screen and (max-width: 359px){
+    .text-effect{ font-size: 25px; right:13%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for services wala in index page  */
+
+.serviceBox{
+ 
+    text-align: center;
+    padding: 20px 15px 60px;
+}
+.serviceBox .service-icon{
+    color: #EB1F52;
+    background-color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    border: 2px solid #EB1F52;
+    display: block;
+    transition: all 0.3s;
+}
+.serviceBox:hover .service-icon{
+    border-color: transparent;
+    box-shadow: 0 0 10px #fff, 0 -10px 0 10px #EB1F52;
+}
+.serviceBox .title{
+    color: #188ece;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+.serviceBox:hover .title{ color:#EB1F52; }
+.serviceBox .description{
+    font-size: 15px;
+    text-align: center;
+    line-height: 27px;
+    margin-bottom: 20px;
+    color: #A1A1A1;
+}
+.serviceBox .read-more{
+    color: #fff;
+    background: #EB1F52;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: -56px;
+    padding: 5px;
+    display: block;
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    transition:all 0.5s;
+}
+.serviceBox:hover .read-more{
+    box-shadow: 0 0 10px #fff inset;
+    transform: rotateX(0);
+}
+.serviceBox .read-more:hover{
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #000;
+    text-decoration: none;
+}
+.serviceBox.blue .service-icon{
+    color: #34C3EB;
+    border-color: #34C3EB;
+}
+.serviceBox.blue:hover .service-icon{
+    border-color: transparent;
+    box-shadow:0 0 10px #fff, 0 -10px 0 10px #34C3EB;
+}
+.serviceBox.blue:hover .title{ color: #34C3EB; }
+.serviceBox.blue .read-more{ background: #34C3EB; }
+
+
+
+
+
+@media only screen and (max-width:990px){
+    .serviceBox{ margin: 0 0 50px; }
+}
+
+
+
+ /****** counter start ****************************/
+
+
+.counter{padding: 30px 0;}
+.counter .counter-content{
+    height: 140px;
+    width: 140px;
+    color: #188ece;
+    text-align: center;
+    padding: 40px 10px;
+    margin: 0 auto;
+    background-color: #FFFDFF;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    position: relative;
+    transition: all 0.3s;
+}
+.counter .counter-content:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.counter .counter-content:before,
+.counter .counter-content:after{
+    content: '';
+    height: 180px;
+    width: 180px;
+    border: 3px solid #34C3EB;
+    border-left: none;
+    border-right: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(10deg);
+    transition: all 0.3s;
+}
+ 
+.counter .counter-content:after{
+    border: 10px solid #188ece;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+
+.counter .counter-content:hover:after{transform: translateX(-50%) translateY(-50%) rotate(-225deg);}
+.counter .counter-value{
+    font-size: 35px;
+    font-weight: 600;
+}
+.counter .title{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 990px) {
+  .counter{margin-bottom: 30px;}
+}
+
+
+/*#################################################### news css #######################*/
+
+
+ 
+.demo{
+    background: linear-gradient(to right,#ffcccc,#d3d3d3);
+}
+.post-slide{
+    margin: 0 15px;
+}
+.post-slide .post-img{
+    overflow: hidden;
+}
+.post-slide .post-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 1s ease-in-out 0s;
+}
+.post-slide:hover .post-img img{
+    transform: scale(1.08);
+}
+.post-slide .post-content{
+    background: #fff;
+    padding: 20px;
+}
+.post-slide .post-title{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+.post-slide .post-title a{
+    display: inline-block;
+    color: #188ece;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover{
+    color: #3d3030;
+    text-decoration: none;
+}
+.post-slide .post-description{
+    font-size: 15px;
+    color: #188ece;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.post-slide .post-bar{
+    padding: 0;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.post-slide .post-bar li{
+    color: #A1A1A1;
+    padding: 2px 0;
+}
+.post-slide .post-bar li i{
+    margin-right: 5px;
+}
+.post-slide .post-bar li a{
+    display: inline-block;
+    font-size: 12px;
+    color: #A1A1A1;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-bar li a:after{
+    content: ",";
+}
+.post-slide .post-bar li a:last-child:after{
+    content: "";
+}
+.post-slide .post-bar li a:hover{
+    color: #A1A1A1;
+    text-decoration: none;
+}
+.post-slide .read-more{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #188ece;
+    border-bottom-right-radius: 10px;
+    text-transform: capitalize;
+    transition: all 0.30s linear;
+}
+.post-slide .read-more:hover{
+    background: #A1A1A1;
+    text-decoration: none;
+}
+
+/****************************************end of css for news ************************************************************/
+
+
+
+
+
+
+/********************************************start of css for our team  ******************************************/
+ 
+.our-team{
+    overflow: hidden;
+    position: relative;
+}
+.our-team:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 193, 234, 0.6);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.our-team:hover:after{
+    top: 0;
+    opacity: 1;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+.our-team .social{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%) rotate(-12deg);
+    transition: all 0.8s ease 0s;
+}
+.our-team:hover .social{ top: 50%; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #0b579f;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 5px;
+}
+.our-team .team-content{
+    width: 100%;
+    padding: 20px 25px;
+    background: #fff;
+    border-bottom: 3px solid #188ece;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.our-team:hover .team-content{ background: #f9f9f9; }
+.our-team .team-content:before{
+    content: "";
+    width: 100%;
+    border-right: 420px solid #fff;
+    border-top: 60px solid transparent;
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+.our-team:hover .team-content:before{ border-right-color: #f9f9f9; }
+.our-team .team-content:after{
+    content: "";
+    width: 3px;
+    height: 50%;
+    background: #0b579f;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.our-team .title{
+    font-size: 18px;
+    color: #188ece;
+    margin: 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A1A1A1;
+    margin-top: 3px;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+/********************************* our team ends************************************************/
+
+
+
+
+
+/********************************* our testimonial ends************************************************/
+
+
+
+ 
+.testimonial{
+    padding: 20px 20px 20px 90px;
+    margin: 10px 20px 50px 55px;
+    border-left: 2px solid #188ece;
+    position: relative;
+}
+.testimonial:after{
+    content: "";
+    border-bottom: 25px solid #188ece;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    bottom: -24px;
+    left: -26px;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #188ece;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #188ece;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 7px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #34C3EB;
+    text-transform: capitalize;
+}
+.testimonial .description{
+    font-size: 15px;
+    color: #A1A1A1;
+    line-height: 28px;
+}
+.owl-theme .owl-controls{ margin-top: 10px; }
+.owl-theme .owl-controls .owl-page span{
+    width: 35px;
+    height: 15px;
+    border-radius: 0;
+    background: #188ece;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #A1A1A1;
+}
+@media only screen and (max-width: 479px){
+    .testimonial{
+        padding: 20px 0 20px 60px;
+        margin: 10px 20px 50px 50px;
+    }
+    .testimonial .title{ font-size: 20px; }
+}
+
+
+/********************************* our testimonial ends************************************************/
+
+
+
+
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+/*********************************************************** Index End Here ************************************************************/
+
+
+
+
+.bgimg-2 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-2 {
+  background-image: url("img/aboutusblur.jpg");
+  min-height: 350px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #188ece;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-2 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
+
+
+:root{
+    --gr-color1: linear-gradient(45deg, #ff9f43,#fc7a00);
+    --gr-color2: linear-gradient(45deg, #DD6186,#c2305c);
+    --gr-color3: linear-gradient(45deg, #43a1a0,#259390);
+    --gr-color4: linear-gradient(45deg, #31BCEF,#159DD5);
+}
+.aboutserviceBox{
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+.aboutserviceBox .service-icon{
+    background: #188ece;
+    font-size: 50px;
+    line-height: 93px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 7px #555;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.aboutserviceBox:hover .service-icon{ transform: rotateY(360deg) rotate(360deg); }
+.aboutserviceBox .service-content{
+    background: #188ece;
+    padding: 20px;
+    border-radius: 10px 10px 50px 50px;
+    transition: all 0.3s ease 0s;
+}
+.aboutserviceBox:hover .service-content{ box-shadow: 5px 5px 5px rgba(0,0,0,0.3); }
+.aboutserviceBox .title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.aboutserviceBox .description{
+    font-size: 15px;
+    line-height: 27px;
+    margin: 0;
+}
+.aboutserviceBox.pink .service-icon,
+.aboutserviceBox.pink .service-content{
+    background: #188ece;
+}
+.aboutserviceBox.green .service-icon,
+.aboutserviceBox.green .service-content{
+    background: var(--gr-color3);
+}
+.aboutserviceBox.blue .service-icon,
+.aboutserviceBox.blue .service-content{
+    background: var(--gr-color4);
+}
+@media only screen and (max-width:990px){
+    .aboutserviceBox{ margin: 0 0 30px; }
+
+
+
+
+
+/************************************************* end who are you *********************************************************/
+
+
+
+
+

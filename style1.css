@@ -1,0 +1,274 @@
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.tab .nav-tabs{
+    border: none;
+    margin-bottom: 10px;
+}
+.tab .nav-tabs li a{
+    padding: 10px 20px;
+    margin-right: 15px;
+    background: #188ece;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 3px solid #A1A1A1;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li a:hover{
+    border: none;
+    border-bottom: 2px solid #188ece;
+    background: #fff;
+    color: #188ece;
+}
+.tab .nav-tabs li a:before{
+    content: "";
+    border-top: 15px solid #188ece;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: all 0.3s ease 0s;
+}
+.tab .nav-tabs li a:hover:before,
+.tab .nav-tabs li.active a:before{ left: 0; }
+.tab .nav-tabs li a:after{
+    content: "";
+    border-bottom: 15px solid #188ece;
+    border-left: 15px solid transparent;
+    border-top: 15px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    transition: all 0.3s ease 0s;
+}
+.tab .nav-tabs li a:hover:after,
+.tab .nav-tabs li.active a:after{ right: 0; }
+.tab .tab-content{
+    padding: 20px 30px;
+    border-bottom: 2px solid #188ece;
+    font-size: 17px;
+    color: #188ece;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+}
+.tab .tab-content:before{
+    content: "";
+    border-top: 25px solid #188ece;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tab .tab-content:after{
+    content: "";
+    border-bottom: 25px solid #188ece;
+    border-left: 25px solid transparent;
+    border-top: 25px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.tab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+@media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --color_1: #EA2027;
+    --color_2: #1F5295;
+    --color_3: #89b743;
+    --color_4: #e02a6d;
+}
+.main-timeline{ font-family: 'Niramit', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{ margin: 0 -15px; }
+.main-timeline .timeline-content{
+    color: var(--color_1);
+    text-align: left;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-icon{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.main-timeline  .timeline:hover .timeline-icon{ transform: rotateY(360deg); }
+.main-timeline .timeline-year{
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline-year:after{
+    content: '';
+    height: 60px;
+    width: 107%;
+    background-color: var(--color_1);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.main-timeline .timeline-year span{
+    color: #var(--white);
+    background-color: var(--color_1);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #999, 0 0 0 15px #var(--white);
+    display: block;
+}
+.main-timeline .inner-content{
+    padding: 0 10px 10px 15px;
+    border-left: 15px solid var(--color_1);
+}
+.main-timeline .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+.main-timeline .description{
+    color: #333;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.main-timeline .timeline.blue .timeline-icon,
+.main-timeline .timeline.blue .title{
+    color: var(--color_2);
+}
+.main-timeline .timeline.blue .timeline-year:after,
+.main-timeline .timeline.blue .timeline-year span{
+    background-color: var(--color_2);
+}
+.main-timeline .timeline.blue .inner-content{ border-left-color: var(--color_2); }
+.main-timeline .timeline.green .timeline-icon,
+.main-timeline .timeline.green .title{
+    color: var(--color_3);
+}
+.main-timeline .timeline.green .timeline-year:after,
+.main-timeline .timeline.green .timeline-year span{
+    background-color: var(--color_3);
+}
+.main-timeline .timeline.green .inner-content{ border-left-color: var(--color_3); }
+.main-timeline .timeline.pink .timeline-icon,
+.main-timeline .timeline.pink .title{
+    color: var(--color_4);
+}
+.main-timeline .timeline.pink .timeline-year:after,
+.main-timeline .timeline.pink .timeline-year span{
+    background-color: var(--color_4);
+}
+.main-timeline .timeline.pink .inner-content{ border-left-color: var(--color_4); }
+@media screen and (max-width:767px){
+    .main-timeline .timeline{ margin: 0 0 15px; }
+    .main-timeline .timeline-year:after{ width: 100%; }
+}
+
+
+
+
+    /******************************************************* Gallery *******************************************************/
+
+
+
+.filter-button
+{
+    font-size: 18px;
+    border: 2px solid #188ece;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #188ece;
+    margin-bottom: 30px;}
+
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #188ece;
+    border-radius: 5px;
+    text-align: center;
+    color: #188ece;
+    background-color: #fff;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #fff;
+    color: #188ece;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+    /******************************************************* Ends Here *****************************************************/
+
+
+
+
+
+
+
+   
